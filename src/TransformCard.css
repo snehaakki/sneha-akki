@@ -1,0 +1,59 @@
+.transform-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color:greenyellow;
+  gap: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: pink;
+}
+
+.transform-card {
+  width: 200px;
+  height: 150px;
+  background-color:aqua;
+  border: 1px solid #520748;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* First card: Move up and rotate */
+.transform-card:nth-child(2):hover {
+  transform: translateY(-100px);
+  box-shadow: 0 5px 15px blueviolet;
+  background-color:pink;
+}
+
+/* Second card: Scale up */
+.transform-card:nth-child(3):hover {
+  transform: translateX(100px);
+  box-shadow: 0 5px 15px gray;
+  background-color:yellow;
+}
+
+/* Third card: Skew */
+.transform-card:nth-child(4):hover {
+    transform: skew(50deg);
+  box-shadow: 0 5px 15px silver;
+  background-color:brown;
+}
+
+.card-content {
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #f50d0d;
+}
+
+p {
+  color: #e6ab0b;
+}
